@@ -7,13 +7,13 @@ const dummyparticipantes = [
   "johny sins",
 ];
 const arrayIngresoParticipantes = [];
-const arrayParticipantes = [...arrayIngresoParticipantes];
+let arrayParticipantes = [...arrayIngresoParticipantes];
 
-const arrayDescartados = [];
+let arrayDescartados = [];
 
 const ruleta = (array) => {
-  const numAzar = Math.floor(Math.random() * array.length) - 1;
-  const elegido = array.numAzar;
+  const numAzar = Math.floor(Math.random() * array.length);
+  const elegido = array[numAzar];
   arrayDescartados = arrayParticipantes.splice(numAzar, numAzar);
   return elegido;
 };
@@ -25,8 +25,8 @@ const resetear = () => {
 };
 
 const cargarParticipantes = () => {
-  const participantes = document.getElementById("participantes").value;
-  arrayParticipantes = string.split(",");
+  let participantes = document.getElementById("participantes").value;
+  arrayParticipantes = participantes.split(",");
   actualizarColumnas();
 };
 
@@ -36,10 +36,12 @@ const mostrarElegido = (participante) => {
 };
 
 const actualizarColumnas = () => {
+  document.getElementById("disponibles").innerHTML = "";
   arrayParticipantes.forEach((participante) => {
     document.getElementById("disponibles").innerHTML += `
         <li class="list-group-item">${participante}</li>`;
   });
+  document.getElementById("descartados").innerHTML = "";
   arrayDescartados.forEach((participante) => {
     document.getElementById("descartados").innerHTML += `
         <li class="list-group-item">${participante}</li>`;

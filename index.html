@@ -27,10 +27,8 @@
         </a>
       </div>
     </nav>
-
-    <!-- IDS BOTONES resetear:"reset", escoger al azar: "lanzar", agregar participantes: "participantes" -->
     <section>
-      <div class="container">
+      <div class="container col-md-6">
         <!-- ruleta -->
         <div class="container">
           <img src="./logo.png" height="300px" width="auto" />
@@ -39,11 +37,13 @@
           </button>
         </div>
         <!-- elegido -->
-        <div class="container" id="elegido"></div>
+        <div class="container col-md-6" id=>
+          <h1 id="elegido"></h1>
+        </div>
       </div>
     </section>
     <section>
-      <div class="container">
+      <div class="container my-3">
         <h2>
           Participantes
         </h2>
@@ -52,14 +52,14 @@
           resetear
         </button>
       </div>
-      <div class="container">
+      <div class="container my-3">
         <h2>Descartados</h2>
         <ul class="list-group" id="descartados"></ul>
       </div>
 
       <!-- ingreso participantes -->
 
-      <div class="container">
+      <div class="container my-3">
         <textarea class="form-control" id="participantes" rows="3"></textarea>
         <button id="agregar" type="button" class="btn btn-primary btn-lg">
           agregar
