@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ruleta rusa</title>
+    <title>Ruleta rusa</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -34,8 +34,8 @@
         <!-- ruleta -->
         <div class="container">
           <img src="./logo.png" height="300px" width="auto" />
-          <button type="button" class="btn btn-primary btn-lg">
-            Large button
+          <button class="btn btn-primary btn-lg" id="lanzar">
+            Hacer girar la ruleta
           </button>
         </div>
         <!-- elegido -->
@@ -48,6 +48,9 @@
           Participantes
         </h2>
         <ul class="list-group" id="disponibles"></ul>
+        <button id="reset" type="button" class="btn btn-primary btn-sm">
+          resetear
+        </button>
       </div>
       <div class="container">
         <h2>Descartados</h2>
@@ -57,11 +60,10 @@
       <!-- ingreso participantes -->
 
       <div class="container">
-        <textarea
-          class="form-control"
-          id="exampleFormControlTextarea1"
-          rows="3"
-        ></textarea>
+        <textarea class="form-control" id="participantes" rows="3"></textarea>
+        <button id="agregar" type="button" class="btn btn-primary btn-lg">
+          agregar
+        </button>
       </div>
     </section>
 
