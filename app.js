@@ -29,7 +29,7 @@ const animacionNombres = () => {
       let elegido = arrayParticipantes[numAzar];
       document.getElementById("elegido").innerHTML = elegido;
       console.log(numAzar);
-    }, 100);
+    }, 200);
   }
 };
 
@@ -79,7 +79,7 @@ document.querySelectorAll("button").forEach((boton) => {
         animacionNombres();
         setTimeout(() => {
           mostrarElegido(ruleta(arrayParticipantes));
-        }, 1000);
+        }, 2000);
         break;
       case "agregar":
         cargarParticipantes();
