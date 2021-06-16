@@ -4,6 +4,7 @@ const dummyparticipantes = [
   "renato monster",
   "elsa capuntas",
   "silvia saint",
+  "johny sins",
 ];
 const arrayIngresoParticipantes = [];
 const arrayParticipantes = [...arrayIngresoParticipantes];
