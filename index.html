@@ -42,7 +42,7 @@
       </div>
       <div class="col-12 col-lg-5">
         <div class="container m-5">
-          <div class="container bg-light text-blue">
+          <div class="container align-center bg-light text-blue">
             <br />
             <h1 class="text-primary text-center">La persona elegida es:</h1>
             <h1 class="text-danger text-center" id="elegido">
@@ -54,7 +54,17 @@
       </div>
     </section>
     <section class="row p-2 col-12">
-      <div class="container col-12 col-lg-4 my-3">
+      <!-- ingreso participantes -->
+
+      <div class="container col-lg-4 my-3 ms-1">
+        <h2>Ingresar Participantes</h2>
+        <textarea class="form-control" id="participantes" rows="3"></textarea>
+        <button id="agregar" type="button" class="btn btn-primary btn-lg my-3">
+          agregar
+        </button>
+      </div>
+
+      <div class="container col-12 col-lg-3 my-3">
         <h2>
           Participantes
         </h2>
@@ -63,18 +73,9 @@
           resetear
         </button>
       </div>
-      <div class="container col-lg-4 my-3">
+      <div class="container col-12 col-lg-3 my-3 me-1">
         <h2>Descartados</h2>
         <ul class="list-group" id="descartados"></ul>
-      </div>
-
-      <!-- ingreso participantes -->
-
-      <div class="container col-lg-4 my-3">
-        <textarea class="form-control" id="participantes" rows="3"></textarea>
-        <button id="agregar" type="button" class="btn btn-primary btn-lg my-3">
-          agregar
-        </button>
       </div>
     </section>
     <script

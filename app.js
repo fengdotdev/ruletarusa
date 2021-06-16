@@ -25,11 +25,10 @@ const animacionNombres = () => {
   let numAzar;
   for (let index = 0; index < 10; index++) {
     setTimeout(() => {
-        for (let index = 0; index < 10; index++) {
-            numAzar = Math.floor(Math.random() * arrayParticipantes.length);
-            let elegido = arrayParticipantes[numAzar];
-            document.getElementById("elegido").innerHTML = elegido;
-        
+      numAzar = Math.floor(Math.random() * arrayParticipantes.length);
+      let elegido = arrayParticipantes[numAzar];
+      document.getElementById("elegido").innerHTML = elegido;
+      console.log(numAzar);
     }, 100);
   }
 };
