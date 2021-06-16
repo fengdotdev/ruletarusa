@@ -20,15 +20,29 @@ const ruleta = (array) => {
 const resetear = () => {
   arrayParticipantes.concat(arrayDescartados);
   arrayDescartados = [];
+  actualizarColumnas();
 };
 
 const cargarParticipantes = () => {
   const participantes = document.getElementById("participantes").value;
   arrayParticipantes = string.split(",");
+  actualizarColumnas();
 };
 
 const mostrarElegido = (participante) => {
   document.getElementById("elegido").innerHTML = participante;
+  actualizarColumnas();
+};
+
+const actualizarColumnas = () => {
+  arrayParticipantes.forEach((participante) => {
+    document.getElementById("disponibles").innerHTML += `
+        <li class="list-group-item">${participante}</li>`;
+  });
+  arrayDescartados.forEach((participante) => {
+    document.getElementById("descartados").innerHTML += `
+        <li class="list-group-item">${participante}</li>`;
+  });
 };
 
 document.querySelectorAll("button").forEach((boton) => {
