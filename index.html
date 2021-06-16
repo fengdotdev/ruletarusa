@@ -13,6 +13,58 @@
     />
   </head>
   <body>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/docs/5.0/assets/brand/bootstrap-logo.svg"
+            alt=""
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Ruleta
+        </a>
+      </div>
+    </nav>
+
+    <!-- IDS BOTONES resetear:"reset", escoger al azar: "lanzar", agregar participantes: "participantes" -->
+    <section>
+      <div class="container">
+        <!-- ruleta -->
+        <div class="container">
+          <img src="./logo.png" height="300px" width="auto" />
+          <button type="button" class="btn btn-primary btn-lg">
+            Large button
+          </button>
+        </div>
+        <!-- elegido -->
+        <div class="container" id="elegido"></div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>
+          Participantes
+        </h2>
+        <ul class="list-group" id="disponibles"></ul>
+      </div>
+      <div class="container">
+        <h2>Descartados</h2>
+        <ul class="list-group" id="descartados"></ul>
+      </div>
+
+      <!-- ingreso participantes -->
+
+      <div class="container">
+        <textarea
+          class="form-control"
+          id="exampleFormControlTextarea1"
+          rows="3"
+        ></textarea>
+      </div>
+    </section>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
